@@ -1,0 +1,279 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta property="og:title" content="AppHack 3">
+<meta property="og:description" content="The Official Webpage for the AppHack2">
+<meta property="og:site_name" content="AppHack1">
+<meta property="og:url" content="https://cs.appstate.edu/apphack3.html" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://cs.appstate.edu/apphack/ah2.jpg" />
+<meta property="fb:admins" content="2735626" />
+<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="https://cs.appstate.edu/apphack/ah.ico" type="image/x-icon">
+<title>AppHack 3</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<!--slider-->
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+
+<link rel="stylesheet" href="default-five-slides.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="jquery.flexslider-min.js"></script>
+
+	<script src="css3-mediaqueries.js"></script>
+	
+	<!-- Kwiks pieces -->
+	<script src="kwiks.js"></script>
+	
+	<!-- Includes for this demo -->
+	<link rel="stylesheet" href="demo.css" type="text/css" media="screen" />
+	
+	<!-- Hook up the FlexSlider -->
+	<script type="text/javascript">
+		var Main = Main || {};
+
+		jQuery(window).load(function() {
+			window.responsiveFlag = jQuery('#responsiveFlag').css('display');
+			Main.gallery = new Gallery();
+			
+			jQuery(window).resize(function() {
+				Main.gallery.update();
+			});
+		});
+
+		function Gallery(){
+			var self = this,
+				container = jQuery('.flexslider'),
+				clone = container.clone( false );
+				
+			this.init = function (){
+				if( responsiveFlag == 'block' ){
+					var slides = container.find('.slides');
+					
+					slides.kwicks({
+						max : 500,
+						spacing : 0
+					}).find('li > a').click(function (){
+						return false;
+					});
+				} else {
+					container.flexslider();
+				}
+			}
+			this.update = function () {
+				var currentState = jQuery('#responsiveFlag').css('display');
+				
+				if(responsiveFlag != currentState) {
+				
+					responsiveFlag = currentState;
+					container.replaceWith(clone);
+					container = clone;
+					clone = container.clone( false );
+					
+					this.init();	
+				}
+			}
+			
+			this.init();
+		}
+	</script>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</head>
+<body>
+<div class="header">	
+  <div class="wrap"> 
+	<div class="header-top">
+		 <div class="logo">
+			 <h1><a href="index.html" class="disabled">AppHack 3</a></h1>
+		 </div>
+	    <div id="text-6" class="visible-all-devices header-text ">		
+	    	<div class="textwidget">
+				</div>
+		</div>
+		 <div class="clear"></div> 
+	   </div>
+   </div>	
+</div>
+      <!------ Slider ------------>
+   <div class="banner">
+      <div class="wrap">
+		   <div class="cssmenu2">
+				<ul>
+					<li><a href="index.html"><span>Home</span></a></li>
+					<li ><a href="apphack2.html#seminars"><span>Seminars</span></a></li>
+					<li><a href="apphack2.html#gallery"><span>Gallery</span></a></li>
+				 	<div class="clear"></div>
+				 </ul>
+	          </div>
+	        </div>
+	    </div>
+   </div>	
+  <div class="main">
+	<div class="wrap">
+
+
+		 <div class="zerg" id="gallery">
+			 <h3>Gallery</h3>
+	 	 </div>
+		<br>
+		 <p id="bloo">Photos are taken to document the fun! </p>
+
+<!--
+<noscript>
+		<div class="nojs">Javascript must be enabled for the correct page display.</div>
+	</noscript>
+	<div id="container">
+		<h2>FlexSlider feat. Kwiks Demo</h2>
+		
+		<div class="flexslider">
+			<ul class="slides" style="width: 600px; height: 500px;">
+				<li>
+					<img src="hack0pic0.jpg" />
+					<div class="flex-caption">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis porttitor massa eget pretium. Mauris vel erat sem, id tempor est. Pellentesque lobortis iaculis massa quis auctor.</p>
+					</div>
+				</li>
+				<li>
+					<img src="hack0pic0.jpg" />
+					<div class="flex-caption">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis porttitor massa eget pretium. Mauris vel erat sem, id tempor est. Pellentesque lobortis iaculis massa quis auctor.</p>
+					</div>
+				</li>
+				<li>
+					<img src="hack0pic0.jpg" />
+					<div class="flex-caption">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis porttitor massa eget pretium. Mauris vel erat sem, id tempor est. Pellentesque lobortis iaculis massa quis auctor.</p>
+					</div>
+				</li>
+				<li>
+					<img src="hack0pic0.jpg" />
+					<div class="flex-caption">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis porttitor massa eget pretium. Mauris vel erat sem, id tempor est. Pellentesque lobortis iaculis massa quis auctor.</p>
+					</div>
+				</li>
+				<li>
+					<img src="hack0pic0.jpg" />
+					<div class="flex-caption">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis porttitor massa eget pretium. Mauris vel erat sem, id tempor est. Pellentesque lobortis iaculis massa quis auctor.</p>
+					</div>
+				</li>
+			</ul>
+	  </div>
+	</div>
+	<span id="responsiveFlag"></span>
+
+
+-->
+
+	    <div class="gal_images2">
+		   		<!-- <a href="hack0pic0.jpg" target="_blank"><img src="hack0pic0.jpg"></a> -->
+		   		<p>There are no photos to display here at the moment.</p>
+	    </div>
+	<div style="clear: both"></div> 
+
+	 <div class="wrap">
+		 <div class="zerg" id="seminars">
+			 <h3>Seminars</h3>
+	 	 </div>
+		<br>
+		 <p id="bloo">At AppHack, speakers across a variety of disciplines share their knowledge by giving 20 minute seminars. Thank you to our teachers! </p>
+	    <div class="sem_images">
+		<div class="simg">
+			 <div class="image">
+		   		<img src="jamesw.jpg">
+		   	 </div>
+			 <div class="texter">
+				<h3> James Wilkes :: Passion Meets Opportunity </h3>
+				<br>
+				<br>
+				<p> Dr. Wilkes is the chair of the Department of Computer Science at Appalachian State University and Founder/CEO of HiveTracks. </p>	
+			 </div>
+		</div>
+		<div class="simg">
+			 <div class="image">
+		   		<img src="markn.jpg">
+		   	 </div>
+			 <div class="texter">
+				<h3> Mark Nystrom :: Data as Media </h3>
+				<br>
+				<br>
+				<p> Mark is a professor in the Graphic Design department at Appalachian State University.  </p>	
+			 </div>
+		</div>
+		<div class="simg">
+			 <div class="image">
+		   		<img src="erichs.jpg">
+		   	 </div>
+			 <div class="texter">
+				<h3> Erich Schlenker :: Entrepreneurship - Finding the Next Great Idea </h3>
+				<br>
+				<br>
+				<p> Erich is the Managing Director of the Transportation Insight Center for Entrepreneurship. Erich is the founder of Synaptis, a a Raleigh-based software training company supporting enterprise wide financial and human resource planning applications. He also worked for 11 years at Intel Corporation and received the Intel Achievement Award for his efforts, the highest honor an employee can achieve at Intel.</p>	
+			 </div>
+		</div>
+
+		<div class="simg">
+			 <div class="image">
+		   		<img src="ecrs.png">
+		   	 </div>
+			 <div class="texter">
+				<h3> David Sprague :: ECRS Keynote </h3>
+				<br>
+				<br>
+				<p> David is the Executive Vice President of ECR Software Company based in Boone, North Carolina. </p>	
+			 </div>
+		</div>
+		<!-- <div class="simg">
+			 <div class="image">
+		   		<img src="eric.jpg">
+		   	 </div>
+			 <div class="texter">
+				<h3> Eric Everson :: Understanding Organizational Culture </h3>
+				<br>
+				<br>
+				<p> Eric is a CS undergrad at Appalachian State University and a fervid web developer. As the treasure for the Association of Computing Machinery chapter at Appalachian State University, Eric shares how factors such as product, market, and technology influence the principles of an organization. </p>	
+			 </div>
+		</div> -->
+
+		<div style="clear: both"></div> 
+	</div>
+	</div>
+	</div>
+	<div style="clear: both"></div> 
+	<div class="footer">
+		<div class="wrap">
+			<div class="copy">
+					<p> Sponsored by the Appalachian State University <a href="http://compsci.appstate.edu">Department of Computer Science</a></p>
+				</div>
+			<div class="footer-text">
+				<ul class="follow_icon">
+					<li><a href="https://www.facebook.com/asucs" style="opacity: 1;"><img src="image/fb.png" alt=""></a></li>
+					<li><a href="https://twitter.com/appstatecompsci" style="opacity: 1;"><img src="image/tw.png" alt=""></a></li>
+					<!-- <li><a href="#" style="opacity: 1;"><img src="images/rss.png" alt=""></a></li> -->
+					<li><a href="https://plus.google.com/u/0/+ASUCSGPlus" style="opacity: 1;"><img src="image/g+.png" alt=""></a></li>
+					<!-- <li><a href="#" style="opacity: 1;"><img src="images/pin.png" alt=""></a></li> -->
+				</ul>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>

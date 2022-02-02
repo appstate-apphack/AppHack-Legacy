@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="crafty.js"></script>
+    <script src="crafty-min.js"></script>
+    <!--<script src="game.js"></script>
+    <script src="component.js"></script>
+    <script src="scenes.js"></script>-->
+    <script>
+        //window.addEventListener('load', Game.start);
+    </script>
+    
+    <style type="text/css" media="screen">
+    body {
+      background: #00CC99;
+      text-align: center;
+      color: yellow;
+      font-family: Arial;
+    }
+
+    .controls {
+      color: yellow;
+    }
+
+    #cr-stage { margin: 20px auto 0; }
+
+    .bottom {
+      font-size: 12px;
+      color: yellow;
+      margin-top: 50px;
+    }
+
+    .bottom a {
+      color: yellow;
+    }
+    </style>
+</head>
+<body>
+  <h2>Hegre's Epic Adventure</h2>
+  <p class="controls">Use W, A, S, and D or arrow keys to Chris move around.</p>
+  <div id="cr-stage" style="background:#fff;"></div>
+  <script>
+      Crafty.init(640,480, document.getElementById('cr-stage'));
+      Crafty.e('Floor, 2D, Canvas, Color')
+      .attr({x: 100, y: 250, w: 100, h: 10})
+      .color('orange');
+
+      Crafty.e('Floor, 2D, Canvas, Color')
+      .attr({x: 0, y: 100, w: 100, h: 10})
+      .color('red');
+
+      Crafty.e('Floor, 2D, Canvas, Color')
+      .attr({x: 300, y: 100, w: 100, h: 10})
+      .color('purple');
+
+      Crafty.e('Floor, 2D, Canvas, Color')
+      .attr({x: 200, y: 200, w: 100, h: 10})
+      .color('blue');
+
+      Crafty.e('2D, Canvas, Color, Fourway, Gravity')
+      .attr({x: 0, y: 0, w: 50, h: 50})
+      .color('#F00')
+      .fourway(4)
+      .gravity('Floor');
+      
+    </script>
+</body>
+</html>

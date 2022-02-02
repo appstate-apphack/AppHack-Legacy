@@ -1,0 +1,16 @@
+body {
+    background-image: url("../ah.png"); 
+    background-size: 200px 200px;
+    background-repeat: repeat;
+}
+
+#button{
+	width:100px;
+	height:100px;
+}
+
+#test{
+	position:absolute;
+	width:200px;
+	height:200px;
+}

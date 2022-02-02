@@ -1,0 +1,40 @@
+<html>
+<head>
+<script type="text/javascript" src="ajaxpagefetcher.js"></script>
+<script src="jquery-1.11.1.js"></script>
+</head>
+
+<body style="background-color:pink;">
+<div id="first" style="background-color:pink; height:100%; width:100%; text-align:center; margin-top:20%; font-size:50pt;"></div>
+
+<script type="text/javascript">
+setTimeout(function(){
+       $('#first').text('Hey you.');
+       //ajaxpagefetcher.load("first", "http://cs.appstate.edu/apphack/brynne4.html", false);
+    },0);
+
+setTimeout(function(){
+        $('#first').text('I know sometimes I\'m a pain in the butt.');
+       //ajaxpagefetcher.load("first", "http://cs.appstate.edu/apphack/brynne2.html", false);
+    },3000);
+
+setTimeout(function(){
+        $('#first').text('But I want you to know..');
+        //ajaxpagefetcher.load("first", "http://cs.appstate.edu/apphack/brynne5.html", false);
+    },6000);
+setTimeout(function(){
+       $('#first').text('That you are the java to my script.');
+        //ajaxpagefetcher.load("first", "http://cs.appstate.edu/apphack/brynne6.html", false);
+    },8000);
+setTimeout(function(){
+           window.location.href = "http://cs.appstate.edu/apphack/iloveyou.html";
+    },11000);
+</script>
+    
+<!--<script type="text/javascript">
+<a href="javascript:ajaxpagefetcher.load('first', 'http://cs.appstate.edu/apphack/iloveyou.html', true, 'http://cs.appstate.edu/apphack/moveobj.js', ['brynne.css'])">Push Me</a>
+</script>-->     
+
+</body>
+</html>
+ 

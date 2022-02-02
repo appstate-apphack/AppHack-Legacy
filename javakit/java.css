@@ -1,0 +1,40 @@
+h1 {
+    text-align:center;
+    color:orange;
+    text-shadow: 2px 2px #000;
+}
+
+body {
+    background-image:url("grassy.png");
+    background-repeat:no-repeat;
+    background-size:100%;
+   
+}
+
+#book {
+    width:15%;
+    border:5px solid #000;
+    margin: 0 auto;
+}
+
+#course {
+    width:15%;
+    border:5px solid #000;
+    margin: 0 auto;
+}
+
+#book img {
+    width:100%;
+}
+
+#book img:hover{
+    opacity:0.85;
+}
+
+#course img {
+    width:100%;
+}
+
+#course img:hover{
+    opacity:0.85;
+}

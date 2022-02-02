@@ -1,0 +1,37 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="android.css">
+<script src="jquery-1.11.1.js">
+</script>
+
+</head>
+<body>
+<br>
+<!--<div id="button">-->
+<a href="FirstAppProject.zip" target="_blank"><img src="android.png" id="test"/></a>
+<!--</div>-->
+
+<!--<script>
+for(var i=1; i<6; i++){
+	document.getElementById("back").style.backgroundSize = (100/i).toString().concat("% ").concat(100/i).toString().concat("%");	
+	sleep(1);
+}
+</script>-->
+<script>
+
+
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+    $('#test').mouseover(function() {
+        var dWidth = $(document).width() - 200, // 100 = image width
+            dHeight = $(document).height() - 200, // 100 = image height
+            nextX = Math.floor(Math.random() * dWidth),
+            nextY = Math.floor(Math.random() * dHeight);
+        $(this).animate({ left: nextX + 'px', top: nextY + 'px' });
+    });
+});
+
+</script>
+</body>
+</html>

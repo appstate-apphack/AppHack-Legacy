@@ -1,0 +1,299 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta property="og:title" content="AppHack 0">
+<meta property="og:description" content="The Official Webpage for AppHack 0">
+<meta property="og:site_name" content="AppHack0">
+<meta property="og:url" content="https://cs.appstate.edu/apphack0.html" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://cs.appstate.edu/apphack/ah0.jpg" />
+<meta property="fb:admins" content="2735626" />
+<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="http://cs.appstate.edu/apphack/ah.ico" type="image/x-icon">
+<title>AppHack | Home</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<!--slider-->
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+
+<link rel="stylesheet" href="default-five-slides.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="jquery.flexslider-min.js"></script>
+
+	<script src="css3-mediaqueries.js"></script>
+	
+	<!-- Kwiks pieces -->
+	<script src="kwiks.js"></script>
+	
+	<!-- Includes for this demo -->
+	<link rel="stylesheet" href="demo.css" type="text/css" media="screen" />
+	
+	<!-- Hook up the FlexSlider -->
+	<script type="text/javascript">
+		var Main = Main || {};
+
+		jQuery(window).load(function() {
+			window.responsiveFlag = jQuery('#responsiveFlag').css('display');
+			Main.gallery = new Gallery();
+			
+			jQuery(window).resize(function() {
+				Main.gallery.update();
+			});
+		});
+
+		function Gallery(){
+			var self = this,
+				container = jQuery('.flexslider'),
+				clone = container.clone( false );
+				
+			this.init = function (){
+				if( responsiveFlag == 'block' ){
+					var slides = container.find('.slides');
+					
+					slides.kwicks({
+						max : 500,
+						spacing : 0
+					}).find('li > a').click(function (){
+						return false;
+					});
+				} else {
+					container.flexslider();
+				}
+			}
+			this.update = function () {
+				var currentState = jQuery('#responsiveFlag').css('display');
+				
+				if(responsiveFlag != currentState) {
+				
+					responsiveFlag = currentState;
+					container.replaceWith(clone);
+					container = clone;
+					clone = container.clone( false );
+					
+					this.init();	
+				}
+			}
+			
+			this.init();
+		}
+	</script>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</head>
+<body>
+<div class="header">	
+  <div class="wrap"> 
+	<div class="header-top">
+		 <div class="logo">
+			 <h1><a href="index.html">AppHack 0</a></h1>
+		 </div>
+	    <div id="text-6" class="visible-all-devices header-text ">		
+	    	<div class="textwidget">
+				</div>
+		</div>
+		 <div class="clear"></div> 
+	   </div>
+   </div>	
+</div>
+      <!------ Slider ------------>
+   <div class="banner">
+      <div class="wrap">
+		   <div class="cssmenu2">
+				<ul>
+					<li><a href="index.html"><span>Home</span></a></li>
+					<li><a href="apphack0.html#seminars"><span>Seminars</span></a></li>
+					<li><a href="apphack0.html#gallery"><span>Gallery</span></a></li>
+				 	<div class="clear"></div>
+				 </ul>
+	          </div>
+	        </div>
+	    </div>
+   </div>	
+  <div class="main">
+	<div class="wrap">
+
+
+		 <div class="zerg" id="gallery">
+			 <h3>Gallery</h3>
+	 	 </div>
+		<br>
+		 <p id="bloo">Photos are taken to document the fun! </p>
+
+<!--
+<noscript>
+		<div class="nojs">Javascript must be enabled for the correct page display.</div>
+	</noscript>
+	<div id="container">
+		<h2>FlexSlider feat. Kwiks Demo</h2>
+		
+		<div class="flexslider">
+			<ul class="slides" style="width: 600px; height: 500px;">
+				<li>
+					<img src="hack0pic0.jpg" />
+					<div class="flex-caption">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis porttitor massa eget pretium. Mauris vel erat sem, id tempor est. Pellentesque lobortis iaculis massa quis auctor.</p>
+					</div>
+				</li>
+				<li>
+					<img src="hack0pic0.jpg" />
+					<div class="flex-caption">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis porttitor massa eget pretium. Mauris vel erat sem, id tempor est. Pellentesque lobortis iaculis massa quis auctor.</p>
+					</div>
+				</li>
+				<li>
+					<img src="hack0pic0.jpg" />
+					<div class="flex-caption">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis porttitor massa eget pretium. Mauris vel erat sem, id tempor est. Pellentesque lobortis iaculis massa quis auctor.</p>
+					</div>
+				</li>
+				<li>
+					<img src="hack0pic0.jpg" />
+					<div class="flex-caption">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis porttitor massa eget pretium. Mauris vel erat sem, id tempor est. Pellentesque lobortis iaculis massa quis auctor.</p>
+					</div>
+				</li>
+				<li>
+					<img src="hack0pic0.jpg" />
+					<div class="flex-caption">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis porttitor massa eget pretium. Mauris vel erat sem, id tempor est. Pellentesque lobortis iaculis massa quis auctor.</p>
+					</div>
+				</li>
+			</ul>
+	  </div>
+	</div>
+	<span id="responsiveFlag"></span>
+
+
+-->
+
+	    <div class="gal_images">
+		   		<a href="hack0pic0.jpg" target="_blank"><img src="hack0pic0.jpg"></a>
+		   		<a href="hack0pic1.jpg" target="_blank"><img src="hack0pic1.jpg"></a>
+		   		<a href="hack0pic2.jpg" target="_blank"><img src="hack0pic2.jpg"></a>
+		   		<a href="hack0pic3.jpg" target="_blank"><img src="hack0pic3.jpg"></a>
+		   		<a href="hack0pic4.jpg" target="_blank"><img src="hack0pic4.jpg"></a>
+		   		<a href="hack0pic5.jpg" target="_blank"><img src="hack0pic5.jpg"></a>
+		   		<a href="hack0pic6.jpg" target="_blank"><img src="hack0pic6.jpg"></a>
+		   		<a href="hack0pic7.jpg" target="_blank"><img src="hack0pic7.jpg"></a>
+	    </div>
+	<div style="clear: both"></div> 
+
+	 <div class="wrap">
+		 <div class="zerg" id="seminars">
+			 <h3>Seminars</h3>
+	 	 </div>
+		<br>
+		 <p id="bloo">At AppHack, speakers across a variety of disciplines share their knowledge by giving 20 minute seminars. Thank you to our teachers! </p>
+	    <div class="sem_images">
+		<div class="simg">
+			 <div class="image">
+		   		<img src="alek.jpg">
+		   	 </div>
+			 <div class="texter">
+				<h3> Aleksander Ratzloff :: Game Programming With SDL </h3>
+				<br>
+				<br>
+				<p> Alek, a CS Undergraduate at Appalachian State University, gives pro tips on effectively developing a game using the SDL graphical library. Alek gathers his knowledge from years of experience in 2D game development and the C++ programming language. </p>	
+			 </div>
+		</div>
+		<div style="clear: both"></div> 
+ 		<div class="simg">
+ 		 	 <div class="image">
+		   		<img src="chris.jpg">
+		   	 </div>
+		 	 <div class="texter">
+				<h3> Christopher Hegre :: Software Deployment Strategies </h3>
+				<br>
+				<br>
+			 	<p> Chris, a CS undergraduate at Appalachian State University, discusses ways to get a working application out quickly and safely while maximizing your user base. Chris is the creator/founder of several widely-used products such as Darkland Servers, AppalApp, and Beepdrive.     </p>	
+			 </div>
+		</div>
+		<div style="clear: both"></div> 
+ 		<div class="simg">
+ 			<div class="image">
+		   		<img src="jay.jpg">
+		   	</div>
+ 			<div class="texter">
+				<h3> Dr. Jay Fenwick :: The Collective Coding Movement </h3>
+				<br>
+				<br>
+				<p> Dr. Fenwick kicks off AppHack 0 with an abridged history lesson on the collective coding movement and software product workflow. Dr. Fenwick shares his expertise from years of teaching mobile application development and past work in the airplane manufacturing industry.  </p>	
+			</div>
+		</div>
+		<div style="clear: both"></div> 
+  		<div class="simg">
+  			<div class="image">
+		   		<img src="nate.jpg">
+		   	</div>
+			<div class="texter">
+				<h3> Nathan Hernandez :: Gadgetz</h3>
+				<br>
+				<br>
+				<p> Nate, a CS undergraduate at Appalachian State University, gives an informative lesson on lower-level programming with the Arduino microcontroller. Nate, a co-founder of the well-known mobile application Beepdrive, has a strong background in embedded systems programming and lower-level architecture. </p>	
+			</div>
+
+		</div>
+		<div style="clear: both"></div> 
+  		<div class="simg">
+  			<div class="image">
+		   		<img src="rt.jpg">
+			</div>
+			<div class="texter">
+				<h3> Dr. Rahman Tashakkori :: Digital Image Processing </h3>
+				<br>
+				<br>
+				<p> Dr. Tashakkori, a CS professor at Appalachian State University, explains theory and practice of modern digital image processing techniques. Dr. Tashakkori shares his knowledge from years of research in medical imaging, edge detection, and other forms of visualization in the physical sciences. </p>	
+			</div>
+		</div>
+  		<div class="simg">
+  			<div class="image">
+		   		<img src="shay.jpg">
+			</div>
+			<div class="texter">
+				<h3> Shay Cichocki :: Crash Into Flask </h3>
+				<br>
+				<br>
+				<p> Shay, a Computer Science alumnus from Appalachian State University, gives a crash course on creating a dynamic and robust web application using the Python-based Flask framework. Shay, a fervid programmer since the age of 16, has a passion for teaching young and aspiring software developers.   </p>	
+			</div>
+		</div>
+		<div style="clear: both"></div> 
+	</div>
+	</div>
+	</div>
+	<div style="clear: both"></div> 
+	<div class="footer">
+		<div class="wrap">
+			<div class="copy">
+					<p> Run by the Appalachian State University <a href="http://compsci.appstate.edu">Department of Computer Science</a></p>
+				</div>
+			<div class="footer-text">
+				<ul class="follow_icon">
+					<li><a href="https://www.facebook.com/asucs" style="opacity: 1;"><img src="image/fb.png" alt=""></a></li>
+					<li><a href="https://twitter.com/appstatecompsci" style="opacity: 1;"><img src="image/tw.png" alt=""></a></li>
+					<!-- <li><a href="#" style="opacity: 1;"><img src="images/rss.png" alt=""></a></li> -->
+					<li><a href="https://plus.google.com/u/0/+ASUCSGPlus" style="opacity: 1;"><img src="image/g+.png" alt=""></a></li>
+					<!-- <li><a href="#" style="opacity: 1;"><img src="images/pin.png" alt=""></a></li> -->
+				</ul>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>

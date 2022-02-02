@@ -1,0 +1,170 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta property="og:title" content="Registration">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="AppHack X">
+<meta property="og:url" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="" />
+<meta property="fb:admins" content="2735626" />
+<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="https://cs.appstate.edu/apphack/ah.ico" type="image/x-icon">
+<title>AppHack 9</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<!--slider-->
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+
+<link rel="stylesheet" href="default-five-slides.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="jquery.flexslider-min.js"></script>
+
+	<script src="css3-mediaqueries.js"></script>
+	
+	<!-- Kwiks pieces -->
+	<script src="kwiks.js"></script>
+	
+	<!-- Includes for this demo -->
+	<link rel="stylesheet" href="demo.css" type="text/css" media="screen" />
+	
+	<!-- Hook up the FlexSlider -->
+	<script type="text/javascript">
+		var Main = Main || {};
+
+		jQuery(window).load(function() {
+			window.responsiveFlag = jQuery('#responsiveFlag').css('display');
+			Main.gallery = new Gallery();
+			
+			jQuery(window).resize(function() {
+				Main.gallery.update();
+			});
+		});
+
+		function Gallery(){
+			var self = this,
+				container = jQuery('.flexslider'),
+				clone = container.clone( false );
+				
+			this.init = function (){
+				if( responsiveFlag == 'block' ){
+					var slides = container.find('.slides');
+					
+					slides.kwicks({
+						max : 500,
+						spacing : 0
+					}).find('li > a').click(function (){
+						return false;
+					});
+				} else {
+					container.flexslider();
+				}
+			}
+			this.update = function () {
+				var currentState = jQuery('#responsiveFlag').css('display');
+				
+				if(responsiveFlag != currentState) {
+				
+					responsiveFlag = currentState;
+					container.replaceWith(clone);
+					container = clone;
+					clone = container.clone( false );
+					
+					this.init();	
+				}
+			}
+			
+			this.init();
+		}
+	</script>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</head>
+<body>
+<div class="header">	
+  <div class="wrap"> 
+	<div class="header-top">
+		 <div class="logo">
+			 <h1><a href="index.html">AppHack 9</a></h1>
+		 </div>
+	    <div id="text-6" class="visible-all-devices header-text ">		
+	    	<div class="textwidget">
+				</div>
+		</div>
+		 <div class="clear"></div> 
+	   </div>
+   </div>	
+</div>
+      <!------ Slider ------------>
+   <div class="banner">
+      <div class="wrap">
+		   <div class="cssmenu2">
+				<ul>
+					<li><a href="index.html#apphackX"><span>Apphack X</span></a></li>
+					<li><a href="index.html"><span>Home</span></a></li>
+					<li><a href="index.html#about"><span>About</span></a></li>
+					<li><a href="index.html#archives"><span>Archives</span></a></li>
+                    <li><a href="index.html#sponsors"><span>Sponsors</span></a></li>
+					<li><a href="index.html#clubs"><span>Clubs</span></a></li>
+				 	<!--<li><a href="rules.html"><span>Rules</span></a></li>-->
+					<li><a href="regis_soon.html" target="_blank"><span>Register</span></a></li>
+					<div class="clear"></div>
+				 </ul>
+	          </div>
+	        </div>
+	    </div>
+   </div>	
+  <div class="main">
+	<div class="wrap">
+
+
+<noscript>
+		<div class="nojs">Javascript must be enabled for the correct page display.</div>
+	</noscript>
+    
+	<span id="responsiveFlag"></span>
+	
+	<div style="clear: both"></div> 
+
+	<div style="clear: both"></div> 
+    <div class="wrap">
+        <div class="zerg">
+		<h3>Registration</h3>
+		</div>
+		<br>
+		<br>
+		<p id="bloo">Registration for AppHack X will open soon!</p>
+	</div>
+	</div>
+	<div style="clear: both"></div> 
+	<div class="footer">
+		<div class="wrap">
+			<div class="copy">
+					<p> Run by the Appalachian State University <a href="http://compsci.appstate.edu">Department of Computer Science</a></p>
+				</div>
+			<div class="footer-text">
+				<ul class="follow_icon">
+					<li><a href="https://www.facebook.com/asucs" style="opacity: 1;"><img src="image/fb.png" alt=""></a></li>
+					<li><a href="https://twitter.com/appstatecompsci" style="opacity: 1;"><img src="image/tw.png" alt=""></a></li>
+					<!-- <li><a href="#" style="opacity: 1;"><img src="images/rss.png" alt=""></a></li> -->
+					<li><a href="https://plus.google.com/u/0/+ASUCSGPlus" style="opacity: 1;"><img src="image/g+.png" alt=""></a></li>
+					<!-- <li><a href="#" style="opacity: 1;"><img src="images/pin.png" alt=""></a></li> -->
+				</ul>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>

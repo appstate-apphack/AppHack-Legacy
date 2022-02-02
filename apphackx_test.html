@@ -1,0 +1,283 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta property="og:title" content="AppHack X">
+<meta property="og:description" content="The Official Webpage for AppHack X">
+<meta property="og:site_name" content="AppHack X">
+<meta property="og:url" content="https://cs.appstate.edu/apphack/apphackx.html" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://cs.appstate.edu/apphack/ah0.jpg" />
+<meta property="fb:admins" content="2735626" />
+<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="https://cs.appstate.edu/apphack/ah.ico" type="image/x-icon">
+<title>AppHack X</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="default-five-slides.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<!--slider-->
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+
+<link rel="stylesheet" href="default-five-slides.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="jquery.flexslider-min.js"></script>
+
+	<script src="css3-mediaqueries.js"></script>
+	
+	<!-- Kwiks pieces -->
+	<script src="kwiks.js"></script>
+	
+	<!-- Includes for this demo -->
+	<link rel="stylesheet" href="demo.css" type="text/css" media="screen" />
+	
+	<!-- Hook up the FlexSlider -->
+	<script type="text/javascript">
+		var Main = Main || {};
+
+		jQuery(window).load(function() {
+			window.responsiveFlag = jQuery('#responsiveFlag').css('display');
+			Main.gallery = new Gallery();
+			
+			jQuery(window).resize(function() {
+				Main.gallery.update();
+			});
+		});
+
+		function Gallery(){
+			var self = this,
+				container = jQuery('.flexslider'),
+				clone = container.clone( false );
+				
+			this.init = function (){
+				if( responsiveFlag == 'block' ){
+					var slides = container.find('.slides');
+					
+					slides.kwicks({
+						max : 500,
+						spacing : 0
+					}).find('li > a').click(function (){
+						return false;
+					});
+				} else {
+					container.flexslider();
+				}
+			}
+			this.update = function () {
+				var currentState = jQuery('#responsiveFlag').css('display');
+				
+				if(responsiveFlag != currentState) {
+				
+					responsiveFlag = currentState;
+					container.replaceWith(clone);
+					container = clone;
+					clone = container.clone( false );
+					
+					this.init();	
+				}
+			}
+			
+			this.init();
+		}
+	</script>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</head>
+<body>
+<div class="header">	
+  <div class="wrap"> 
+	<div class="header-top">
+		 <div class="logo">
+			 <h1><a href="index.html">AppHack X</a></h1>
+		 </div>
+	    <div id="text-6" class="visible-all-devices header-text ">		
+	    	<div class="textwidget">
+				</div>
+		</div>
+		 <div class="clear"></div> 
+	   </div>
+   </div>	
+</div>
+      <!------ Slider ------------>
+   <div class="banner">
+      <div class="wrap">
+		   <div class="cssmenu2">
+				<ul>
+					<li><a href="index.html"><span>Home</span></a></li>
+				 	<li><a href="apphackx.html#schedule"><span>Schedule</span></a></li>
+				 	<li><a href="apphackx.html#prizes"><span>Prizes</span></a></li>
+					<li><a href="apphackx.html#rules"><span>Rules</span></a></li>
+					<li><a href="apphackx.html#seminars"><span>Seminars</span></a></li>
+					<!-- <li><a href="apphackx.html#gallery"><span>Gallery</span></a></li> -->
+					<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdqPngSNxCsTkTlNEtTgI4TXkNvRTve88cYYP6cj8gkagGOOA/viewform?usp=sf_link"><span>Register</span></a></li>
+                    <div class="clear"></div>
+				 </ul>
+	        </div>
+	    </div>
+	</div>
+
+
+<noscript>
+		<div class="nojs">Javascript must be enabled for the correct page display.</div>
+	</noscript>
+    
+	<span id="responsiveFlag"></span>
+	
+	<div style="clear: both"></div> 
+
+	<div style="clear: both"></div>
+		
+<div class="main">
+<div class="wrap">
+	<div class="wrap">
+		<br><br>
+		<div class="zerg" id="apphackX">
+            <h3>AppHack X</h3>
+		</div>
+            <br>
+		<div class="wrap">
+			<p id=bloo>Apphack X will begin on Friday, April 5th at 6pm and end on Saturday, April 6th at 12pm. For AppHack's tenth anniversary, we are expecting our largest turnout yet, with more sponsors and participants than ever before!</p>
+			<br>
+			<p id=bloo>Be sure to
+				<a id="boldt" href="https://docs.google.com/forms/d/e/1FAIpQLSdqPngSNxCsTkTlNEtTgI4TXkNvRTve88cYYP6cj8gkagGOOA/viewform?usp=sf_link">register</a>
+				and sign up for the
+				<a id="boldt" href="https://join.slack.com/t/apphackx/shared_invite/enQtNTk0MjY4NTU5Nzk2LTYwMjQzMzI2OTc1NzRkMTU3ODIyOTljNjYyZDU3YmNmMDMzNzY2NmQ2MmE1Y2MxNTU3YTFjNTMxYjNjMmViYmY">slack</a>!</p>
+		</div>
+		<br><br>
+        <div class="zerg" id=schedule>
+        </div>
+		<p id=bloo><img src="AppHack X Schedule.png"></p>
+        <br>
+    </div>
+	<div class="wrap">
+        <div class=zerg id=prizes>
+            <h3>Prizes</h3>
+        </div>
+        <br>
+		<div class="wrap">
+            <ul style="padding-left:150px;text-align:left;" id="bloo">
+                <li><u>First Place Overall:</u>
+                <ul style="padding-left:40px">
+                    <li>Oculus Go</li>
+					<li>Cracking the Coding Interview</li>
+                </ul></li><br>
+				<li><u>Second Place Overall:</u>
+                <ul style="padding-left:40px">
+                    <li>JBL Charge 3</li>
+                </ul></li><br>
+				<li><u>Third Place Overall:</u>
+                <ul style="padding-left:40px">
+                    <li>Razer Headset</li>
+                </ul></li><br>
+				<li><u>Outstanding Freshmen:</u>
+                <ul style="padding-left:40px">
+                    <li>Arduino</li>
+                </ul></li><br>
+				<li><u>Improving Library Services:</u>
+                <ul style="padding-left:40px">
+                    <li>Apple EarPods</li>
+                </ul></li><br>
+				<li><u>Best Game:</u>
+                <ul style="padding-left:40px">
+                    <li>Rainbow Backlit Keyboard and Mouse</li>
+                </ul></li><br>
+				<li><u>Best Visual Design:</u>
+                <ul style="padding-left:40px">
+                    <li>3D Printing Pen</li>
+                </ul></li><br>
+				<li><u>Women in CS:</u>
+                <ul style="padding-left:40px">
+                    <li>$20 Amazon Gift Card</li>
+                </ul></li><br>
+				<li><u>Best Algorithm Design:</u>
+                <ul style="padding-left:40px">
+                    <li>$20 Steam Gift Card</li>
+                </ul></li><br>
+            </ul>
+		</div>
+		<div class="wrap">
+        <div class=zerg id=rules>
+            <h3>Rules</h3>
+        </div>
+        <br>
+		<div class="wrap">
+            <ol style="padding-left:130px;padding-right:130px;text-align:left;list-style:decimal;" id="bloo">
+			<li value="0">No weapons or alcohol.</li>
+			<li>Be respectful of other attendees.</li>
+			<li>All coding and the majority of asset work must be done during the event (April 5th 6pm - April 6th 12pm).
+			<ol style="padding-left:40px;list-style:lower-alpha;">
+				<li>UMLs, concept art, and to-do lists are allowed beforehand.
+			</li></ol></li>
+			<li>At least one team member must be present for the demo fair. Prizes will not be awarded to teams that are not present.</li>
+			<li>All teams retain full ownership of what they create during AppHack.</li>
+			<li>Category-specific rules:
+			<ol style="padding-left:40px;list-style:lower-alpha;">
+				<li>To win the Outstanding Freshman prize, everyone on the team must either be in CS 2440 (or equivalent) currently, OR have not yet taken it.</li>
+				<li>To win the Women in CS prize, at least half the team members must identify as women.</li>
+				<li>To win the Best Algorithm design prize, the team must submit a written explanation of their algorithm.</li>
+			</ol></li>
+			</ol>
+		</div>
+    </div>
+	
+	
+	
+	 <div class="wrap">
+		 <div class="zerg" id="seminars">
+			 <h3>Workshops</h3>
+	 	 </div>
+		<br>
+			<p id="bloo">TBA!</p>
+		 <!--<p id="bloo">At AppHack, speakers across a variety of disciplines share their knowledge by giving 50 minute seminars. Thank you to all who have agreed to spread their knowledge! </p>-->
+	    <!--<div class="semimages">
+        <div class="simg">
+            <div class="image">
+                <img src="cslogo.png">
+            </div>
+            <div class="texter">
+                <h3>Dr. Cindy Norris :: How fast can you add 1 billion numbers? A hands-on workshop!</h3>
+                <br>
+                <br>
+                <p> Off-the-shelf desktops and laptops combine multi-core CPUs with hundreds of GPU cores bringing tera-scale computing power. Although traditionally used for graphics, the release of CUDA by NVIDIA now allows the GPU to solve problems in any number of disciplines. This hands-on workshop will introduce attendees to parallel programming that harnesses the power of the CPU and the GPU to solve the problem of adding a billion numbers.</p>
+            </div>
+        </div>
+	</div>
+	</div>-->
+</div>
+</div>
+<div style="clear: both"></div> 
+	<div class="footer">
+		<div class="wrap">
+			<div class="copy">
+					<p> Run by the Appalachian State University <a href="http://compsci.appstate.edu">Department of Computer Science</a></p>
+				</div>
+			<div class="footer-text">
+				<ul class="follow_icon">
+					<li><a href="https://www.facebook.com/asucs" style="opacity: 1;"><img src="image/fb.png" alt=""></a></li>
+					<li><a href="https://twitter.com/appstatecompsci" style="opacity: 1;"><img src="image/tw.png" alt=""></a></li>
+					<!-- <li><a href="#" style="opacity: 1;"><img src="images/rss.png" alt=""></a></li> -->
+					<li><a href="https://plus.google.com/u/0/+ASUCSGPlus" style="opacity: 1;"><img src="image/g+.png" alt=""></a></li>
+					<!-- <li><a href="#" style="opacity: 1;"><img src="images/pin.png" alt=""></a></li> -->
+				</ul>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>

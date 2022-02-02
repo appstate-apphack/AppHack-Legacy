@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Palindrome testing application.">
+    <meta name="author" content="Sina Tashakkori">
+    <link href="./palindromes.css" rel="stylesheet">
+  </head>
+  <div id="cover">
+  <body>
+    <div class="container" id="bubble">
+      <form class="form-signin" role="form">
+            <div id="input">
+            <input type="word" type="text" class="form-control" id="sttform">
+            <script>
+   var text_input = document.getElementById ('sttform');
+text_input.focus();
+text_input.select()v;x
+<head>
+<script type="text/javascript" src="ajaxpagefetcher.js"></script>
+<script src="jquery-1.11.1.js"></script>
+</head>
+
+<body style="background-color:pink;">
+<div id="first" style="background-color:#56A0D3; height:100%; width:100%; text-align:center; margin-top:20%; font-size:50pt;"></div>
+
+<script type="text/javascript">
+  setTimeout(function(){
+      $('#first').text('Hey you.');
+      //ajaxpagefetcher.load("first", "http://cs.appstate.edu/apphack/brynne4.html", false);
+    },0);
+</script>yw
+            </script>
+            </div>
+            <style type="text/css">
+  .input { cursor:none; }
+            </style>
+            <br>
+            <br>
+          </form>
+    </div>
+    </body>
+    </div>
+</html>

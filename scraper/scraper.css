@@ -1,0 +1,62 @@
+h1 {
+    align:center;
+    color:CYAN;
+    text-shadow: 2px 2px #000;
+}
+
+html{
+    background-color:black;
+    background-image:url("pill.jpg");
+    background-repeat:no-repeat center center fixed;
+    background-size:cover;
+}
+
+#hands{
+    height: 100px;
+    position:fixed;
+    top: 89%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#red{
+    font-size: 20;
+    padding: 0px 20% 0px 18%;
+    color:blue;
+}
+
+#blue{
+    font-size: 20;
+    padding: 0px 20% 0px 19%;
+    color:red;   
+}
+/*
+#book {
+    width:15%;
+    border:5px solid #000;
+    margin: 0 auto;
+            }
+
+#course {
+    width:15%;
+    border:5px solid #000;
+    margin: 0 auto;
+            }
+
+#book img {
+    width:100%;
+    }
+
+#book img:hover{
+    opacity:0.85;
+    }
+
+#course img {
+    width:100%;
+    }
+
+#course img:hover{
+    opacity:0.85;
+}
+*/
